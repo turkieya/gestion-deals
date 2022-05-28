@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<accessrules>
+			<accessrule kind="nonaccessible" pattern="javax/smartcardio/**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/lenovo/Documents/mysql-connector-java-8.0.27/mysql-connector-java-8.0.27.jar"/>
+	<classpathentry kind="lib" path="C:/Users/lenovo/Downloads/jfoenix-9.0.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/lenovo/Downloads/fontawesomefx-8.9 (1).jar"/>
+	<classpathentry kind="lib" path="C:/Users/lenovo/Documents/JAVA 2021/iText-2.1.7.js2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/lenovo/Documents/JAVA 2021/itextpdf-5.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/lenovo/Documents/JAVA 2021/javax.mail.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_191/jre/lib/ext/JAVAMAIL API/activation.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_191/jre/lib/ext/JAVAMAIL API/dsn.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_191/jre/lib/ext/JAVAMAIL API/imap.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_191/jre/lib/ext/JAVAMAIL API/mail.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_191/jre/lib/ext/JAVAMAIL API/mailapi.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_191/jre/lib/ext/JAVAMAIL API/pop3.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_191/jre/lib/ext/JAVAMAIL API/smtp.jar"/>
+	<classpathentry kind="lib" path="C:/Users/lenovo/Documents/JAVA 2021/mysql-connector-java-8.0.19.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

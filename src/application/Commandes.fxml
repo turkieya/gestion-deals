@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="900.0" style="-fx-background-color: RGB(255,255,255);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CommandesController">
+   <children>
+      <Label layoutX="313.0" layoutY="14.0" text="Listes Des Achats" textFill="#c2004c">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="93.0" text="Date">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtdate" layoutX="114.0" layoutY="88.0" opacity="0.79" prefHeight="30.0" prefWidth="150.0" promptText="JJ/MM/YYYY" />
+      <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="234.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/calendar1.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tabachats" layoutX="29.0" layoutY="232.0" prefHeight="237.0" prefWidth="524.0">
+        <columns>
+          <TableColumn fx:id="colnum" prefWidth="75.0" text="Num" />
+          <TableColumn fx:id="coldate" prefWidth="94.39998626708984" text="Date" />
+            <TableColumn fx:id="coldeal" prefWidth="143.20001220703125" text="Deal" />
+            <TableColumn fx:id="colprix" prefWidth="90.39996337890625" text="Prix" />
+            <TableColumn fx:id="colfr" prefWidth="126.40005493164062" text="Fournisseur" />
+        </columns>
+      </TableView>
+      <VBox layoutX="589.0" layoutY="141.0" prefHeight="238.0" prefWidth="286.0" spacing="10.0">
+         <children>
+            <HBox prefHeight="34.0" prefWidth="236.0" spacing="58.0">
+               <children>
+                  <Label prefHeight="22.0" prefWidth="51.0" text="Num">
+                     <font>
+                        <Font name="Bell MT Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="num" disable="true" opacity="0.68" />
+               </children>
+            </HBox>
+            <HBox prefHeight="34.0" prefWidth="236.0" spacing="58.0">
+               <children>
+                  <Label prefHeight="22.0" prefWidth="51.0" text="Date">
+                     <font>
+                        <Font name="Bell MT Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="date" disable="true" opacity="0.68" />
+               </children>
+            </HBox>
+            <HBox prefHeight="34.0" prefWidth="236.0" spacing="58.0">
+               <children>
+                  <Label prefHeight="22.0" prefWidth="51.0" text="Deal">
+                     <font>
+                        <Font name="Bell MT Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="deal" disable="true" opacity="0.68" />
+               </children>
+            </HBox>
+            <HBox prefHeight="34.0" prefWidth="236.0" spacing="58.0">
+               <children>
+                  <Label prefHeight="22.0" prefWidth="51.0" text="Prix">
+                     <font>
+                        <Font name="Bell MT Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="prix" disable="true" opacity="0.68" />
+               </children>
+            </HBox>
+            <HBox prefHeight="34.0" prefWidth="236.0">
+               <children>
+                  <Label prefHeight="22.0" prefWidth="110.0" text="Fournisseur">
+                     <font>
+                        <Font name="Bell MT Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fournisseur" disable="true" opacity="0.68" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="589.0" layoutY="91.0" text="Informaions" textFill="#f10077">
+         <font>
+            <Font name="Bodoni MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="763.0" layoutY="385.0" mnemonicParsing="false" onAction="#imprimer" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: f10077;" text="Imprimer" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="177.0" layoutY="149.0" mnemonicParsing="false" onAction="#chercherAchat" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: f10077;" text="Chercher" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

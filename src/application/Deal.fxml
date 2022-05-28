@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: RGB(255,255,255);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DealController">
+   <children>
+      <HBox layoutX="8.0" prefHeight="40.0" prefWidth="879.0" spacing="105.0" style="-fx-background-color: RGB(255,255,255);">
+         <padding>
+            <Insets left="30.0" top="15.0" />
+         </padding>
+         <children>
+            <Label prefHeight="35.0" prefWidth="199.0" text="Beauty &amp; Spa" textAlignment="RIGHT" textFill="#c2004c">
+               <font>
+                  <Font name="Bell MT Italic" size="30.0" />
+               </font>
+               <padding>
+                  <Insets left="28.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets top="-15.0" />
+               </HBox.margin>
+            </Label>
+            <Label prefHeight="22.0" prefWidth="203.0" text="Restauration" textAlignment="RIGHT" textFill="#c2004c">
+               <font>
+                  <Font name="Bell MT Italic" size="30.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets top="-15.0" />
+               </HBox.margin>
+            </Label>
+            <Label prefHeight="18.0" prefWidth="203.0" text="Hôtellerie" textAlignment="RIGHT" textFill="#c2004c">
+               <font>
+                  <Font name="Bell MT Italic" size="30.0" />
+               </font>
+               <padding>
+                  <Insets left="47.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets top="-15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <BorderPane fx:id="dealpane" layoutY="40.0" prefHeight="557.0" prefWidth="900.0" style="-fx-background-color: RGB(255,255,255);">
+         <top>
+            <HBox prefHeight="94.0" prefWidth="900.0" spacing="160.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="spaimg" fitHeight="97.0" fitWidth="148.0" onMouseClicked="#showSpa_Beauty" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/spa.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="restauimg" fitHeight="97.0" fitWidth="148.0" onMouseClicked="#showRestauration" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/restauration.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="hotelimg" fitHeight="97.0" fitWidth="148.0" onMouseClicked="#showHotellerie" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/hotel.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets left="72.0" />
+               </padding>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

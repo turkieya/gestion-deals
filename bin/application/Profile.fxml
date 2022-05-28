@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ProfilController">
+   <children>
+      <Label layoutX="64.0" layoutY="6.0" prefHeight="39.0" prefWidth="273.0" text="Modifier Profile" textFill="#c2004c">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <VBox layoutX="379.0" layoutY="37.0" prefHeight="419.0" prefWidth="218.0" spacing="6.0">
+         <children>
+            <Label text="CIN">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtcin" promptText="Numére Carte Identité" />
+            <Label text="Nom">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtnom" promptText="Nom" />
+            <Label text="Prenom">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtprenom" promptText="Prénom" />
+            <Label text="Email">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtemail" promptText="Adresse Email" />
+            <Label text="Mot de passe">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtmdp" promptText="Mot de passe" />
+            <Label text="Contact">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txttel" promptText="Numéro Téléphone" />
+            <Label text="Adresse">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtadresse" promptText="Adresse">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <Button layoutX="505.0" layoutY="491.0" mnemonicParsing="false" onAction="#modifier" style="-fx-background-color: RGB(241,0,119);" text="Enregistrer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
